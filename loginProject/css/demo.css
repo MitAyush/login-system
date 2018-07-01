@@ -1,0 +1,64 @@
+@import url('input.css');
+*{
+	margin: 0;
+	padding: 0;
+    /*background-image: url('../images/bg4.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    font-family: 'Damion', cursive;
+}
+.container{
+	position: absolute;
+    top: 10%;
+    left: 31%;
+    width: 39%;
+    text-align: center;
+    overflow: hidden;
+}
+.container h1{
+	text-align: center;
+	height: 14%;
+	font-family: 'Damion', cursive;
+}
+.container input[type='submit']{
+	height: 39px;
+    width: 200px;
+    font-size: 27px;
+    font-weight: bolder;
+    top: -6px;
+    position: relative;
+    animation: buttonanimaintion 1s;
+    margin-top: 20px; 
+       
+}
+@keyframes buttonanimaintion{
+	0%{
+		transform: translateX(-100px);
+		opacity: 0;
+	}25%{
+		transform: translateX(50px);
+		opacity: .25;
+	}50%{
+		transform: translateX(-100px);
+		opacity: .5;
+	}100%{
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+.container input[type='submit']:hover{
+	color: red; 
+}
+.container a{
+	text-decoration: none;
+    font-size: 30px;
+    margin-left: 60%;
+}
+.alertbox{
+	z-index: 10;
+	display: inline;
+	float: left;
+	margin-left:15%;
+	font-size: 22px;
+    font-family: serif;
+}
